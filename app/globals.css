@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-border: #1a1a1a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #888888;
+  --color-text-muted: #444444;
+  --color-accent: #00ffff;
+  --font-mono: "Space Mono", monospace;
+}
+
+html {
+  background-color: #0a0a0a;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* AsciiEffect output styling overrides */
+.ascii-container table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 0;
+  padding: 0;
+}
+
+.ascii-container td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* Ensure AsciiEffect div fills container */
+.ascii-container > div {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
